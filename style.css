@@ -33,8 +33,8 @@ header nav a:hover{
     text-decoration: underline;
 }
 
-main{
-    padding: 4rem 4rem;
+.hero{
+    padding: 4rem;
     background-image: linear-gradient(to right, #1781fa, #194088);
     color: #fff;
 }
@@ -74,10 +74,8 @@ footer p{
 }
 
 #servicos{
-    padding: 2rem;
-    background-color: #fff;
+    padding: 4rem;
     color: #0f172a;
-    border-radius: 8px;
 }
 
 .titulo-servicos{
