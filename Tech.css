@@ -1,0 +1,25 @@
+#servicos {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.titulo-servicos {
+  color: #0f172a;
+}
+
+.tabela-servicos {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabela-servicos th {
+  background-color: #0f172a;
+  color: white;
+  padding: 12px;
+  text-align: left;
+}
+
+.tabela-servicos td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
