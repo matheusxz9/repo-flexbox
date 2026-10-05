@@ -251,12 +251,10 @@ footer p {
 #contato .form-group input,
 #contato .form-group textarea {
   width: 100%;
-  box-sizing: border-box;
   padding: 0.7rem 0.85rem;
   border: 1px solid #cbd5e1;
   border-radius: 6px;
   font-size: 0.9rem;
-  font-family: inherit;
   color: #0f172a;
   background-color: #ffffff;
   outline: none;
@@ -303,31 +301,4 @@ footer p {
 
 #contato .submit-button:active {
   transform: scale(0.98);
-}
-
-@media (max-width: 768px) {
-  .produtos-grid {
-    grid-template-columns: 1fr;
-  }
-
-  #contato {
-    padding: 2rem 1.5rem;
-  }
-
-  #contato .contact-wrapper {
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  #contato .contact-header {
-    padding-top: 0;
-  }
-
-  #contato .contact-card {
-    padding: 1.5rem;
-  }
-
-  #contato .submit-button {
-    width: 100%;
-  }
 }
