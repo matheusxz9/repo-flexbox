@@ -1,248 +1,333 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 4rem;
-    background-color: #09265c;
-    color: #fff;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem;
+  background-color: #09265c;
+  color: #fff;
 }
 
-header h1{
-    font-size: 2rem;
+header h1 {
+  font-size: 2rem;
 }
 
-header nav ul{
-    display: flex;
-    gap: 1rem;
-    list-style: none;
+header nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
 }
 
-header nav a{
-    color: #fff;
-    text-decoration: none;
+header nav a {
+  color: #fff;
+  text-decoration: none;
 }
 
-header nav a:hover{
-    text-decoration: underline;
+header nav a:hover {
+  text-decoration: underline;
 }
 
-.hero{
-    padding: 4rem;
-    background-image: linear-gradient(to right, #1781fa, #194088);
-    color: #fff;
+.equipamentos-tecnologia {
+  padding: 4rem;
+  background-image: linear-gradient(to right, #1781fa, #194088);
+  color: #fff;
 }
 
-section{
-    margin-bottom: 2rem; 
+.produtos-destaque {
+  background: #f8f9fc;
+  padding: 3rem 0;
 }
 
-section h2{
-    font-size: 2rem;
-    margin-bottom: 1rem;
+.container {
+  width: 90%;
+  max-width: 80%;
+  padding: 4rem;
 }
 
-section p{
-    font-size: 1rem;
-    margin-bottom: 1rem;
+.produtos-destaque h2 {
+  color: #111827;
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
 }
 
-section button{
-    padding: 0.5rem 1rem;
-    background-color: #ffff;
-    color: #1f93ff;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
+.produtos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
 }
 
-footer{
-    padding: 1rem;
-    background-color: #09265c;
-    color: #fff;
-    text-align: center;
+.produto-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.25rem;
+  overflow: hidden;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+  transition: transform 0.2s ease;
 }
 
-footer p{
-    font-size: 0.8rem;
+.produto-card:hover {
+  transform: translateY(-5px);
 }
 
-#servicos{
-    padding: 4rem;
-    color: #0f172a;
+.produto-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
 }
 
-.titulo-servicos{
-    color: #0f172a;
-    margin-bottom: 1rem;
+.produto-info {
+  padding: 1.25rem;
 }
 
-.tabela-servicos{
-    width: 100%;
-    border-collapse: collapse;
+.produto-info h3 {
+  color: #111827;
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
 }
 
-.tabela-servicos th{
-    background-color: #0f172a;
-    color: #fff;
-    padding: 12px;
-    text-align: left;
+.produto-info p {
+  color: #4b5563;
+  font-size: 1rem;
+  line-height: 1.4;
+  min-height: 45px;
+  margin-bottom: 1rem;
 }
 
-.tabela-servicos td{
-    padding: 12px;
-    border-bottom: 1px solid #ddd;
+.preco {
+  display: block;
+  color: #111827;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 
-/* ==========================================================
-   FORMULÁRIO DE CONTATO
-   Tudo abaixo éEscopo em #contato para não afetar as
-   seções existentes (hero, serviços, header, footer).
-   ========================================================== */
-
-#contato{
-    padding: 4rem;
-    background-color: #f5f7fb;
-    color: #1e293b;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+.produto-info button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.25rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
 }
 
-#contato .contact-wrapper{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 100%;
-    max-width: 960px;
-    gap: 3rem;
+.produto-info button:hover {
+  background: #1d4ed8;
 }
 
-#contato .contact-header{
-    flex: 1;
-    padding-top: 1rem;
+section {
+  margin-bottom: 2rem;
 }
 
-#contato .contact-header h1{
-    font-size: 2rem;
-    font-weight: 700;
-    color: #0f172a;
-    margin: 0 0 0.75rem 0;
-    letter-spacing: -0.025em;
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
-#contato .contact-header p{
-    font-size: 1rem;
-    color: #64748b;
-    line-height: 1.5;
-    margin: 0;
+section p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
-#contato .contact-card{
-    flex: 1.15;
-    width: 100%;
-    background-color: #ffffff;
-    padding: 2.25rem;
-    border-radius: 12px;
-    border: 1px solid #eaeef4;
-    box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.04), 0 2px 6px -1px rgba(15, 23, 42, 0.02);
+section button {
+  padding: 0.5rem 1rem;
+  background-color: #ffff;
+  color: #1f93ff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
 }
 
-#contato .contact-form{
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
+footer {
+  padding: 1rem;
+  background-color: #09265c;
+  color: #fff;
+  text-align: center;
 }
 
-#contato .form-group{
-    display: flex;
-    flex-direction: column;
-    gap: 0.45rem;
+footer p {
+  font-size: 0.8rem;
 }
 
-#contato .form-group label{
-    font-size: 0.875rem;
-    font-weight: 600;
-    color: #334155;
+#servicos {
+  padding: 4rem;
+  color: #0f172a;
+}
+
+.titulo-servicos {
+  color: #0f172a;
+  margin-bottom: 1rem;
+}
+
+.tabela-servicos {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabela-servicos th {
+  background-color: #0f172a;
+  color: #fff;
+  padding: 12px;
+  text-align: left;
+}
+
+.tabela-servicos td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+#contato {
+  padding: 4rem;
+  background-color: #f5f7fb;
+  color: #1e293b;
+}
+
+#contato .contact-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 960px;
+  gap: 3rem;
+}
+
+#contato .contact-header {
+  flex: 1;
+  padding-top: 1rem;
+}
+
+#contato .contact-header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 0.75rem 0;
+  letter-spacing: -0.025em;
+}
+
+#contato .contact-header p {
+  font-size: 1rem;
+  color: #64748b;
+  line-height: 1.5;
+  margin: 0;
+}
+
+#contato .contact-card {
+  flex: 1.15;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 2.25rem;
+  border-radius: 12px;
+  border: 1px solid #eaeef4;
+  box-shadow:
+    0 4px 20px -2px rgba(15, 23, 42, 0.04),
+    0 2px 6px -1px rgba(15, 23, 42, 0.02);
+}
+
+#contato .contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+#contato .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+#contato .form-group label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #334155;
 }
 
 #contato .form-group input,
-#contato .form-group textarea{
-    width: 100%;
-    box-sizing: border-box;
-    padding: 0.7rem 0.85rem;
-    border: 1px solid #cbd5e1;
-    border-radius: 6px;
-    font-size: 0.9rem;
-    font-family: inherit;
-    color: #0f172a;
-    background-color: #ffffff;
-    outline: none;
-    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+#contato .form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.7rem 0.85rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-family: inherit;
+  color: #0f172a;
+  background-color: #ffffff;
+  outline: none;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
 }
 
 #contato .form-group input::placeholder,
-#contato .form-group textarea::placeholder{
-    color: #94a3b8;
+#contato .form-group textarea::placeholder {
+  color: #94a3b8;
 }
 
 #contato .form-group input:focus,
-#contato .form-group textarea:focus{
-    border-color: #2563eb;
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+#contato .form-group textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
 }
 
-#contato .form-group textarea{
-    resize: vertical;
-    min-height: 110px;
+#contato .form-group textarea {
+  resize: vertical;
+  min-height: 110px;
 }
 
-#contato .submit-button{
-    align-self: flex-start;
-    background-color: #2563eb;
-    color: #ffffff;
-    font-size: 0.9rem;
-    font-weight: 600;
-    padding: 0.65rem 1.35rem;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.15s ease, transform 0.1s ease;
-    margin-top: 0.25rem;
+#contato .submit-button {
+  align-self: flex-start;
+  background-color: #2563eb;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.65rem 1.35rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition:
+    background-color 0.15s ease,
+    transform 0.1s ease;
+  margin-top: 0.25rem;
 }
 
-#contato .submit-button:hover{
-    background-color: #1d4ed8;
+#contato .submit-button:hover {
+  background-color: #1d4ed8;
 }
 
-#contato .submit-button:active{
-    transform: scale(0.98);
+#contato .submit-button:active {
+  transform: scale(0.98);
 }
 
-@media (max-width: 768px){
-    #contato{
-        padding: 2rem 1.5rem;
-    }
+@media (max-width: 768px) {
+  .produtos-grid {
+    grid-template-columns: 1fr;
+  }
 
-    #contato .contact-wrapper{
-        flex-direction: column;
-        gap: 2rem;
-    }
+  #contato {
+    padding: 2rem 1.5rem;
+  }
 
-    #contato .contact-header{
-        padding-top: 0;
-    }
+  #contato .contact-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+  }
 
-    #contato .contact-card{
-        padding: 1.5rem;
-    }
+  #contato .contact-header {
+    padding-top: 0;
+  }
 
-    #contato .submit-button{
-        width: 100%;
-    }
+  #contato .contact-card {
+    padding: 1.5rem;
+  }
+
+  #contato .submit-button {
+    width: 100%;
+  }
 }

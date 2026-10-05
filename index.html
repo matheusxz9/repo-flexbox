@@ -1,105 +1,166 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="PT-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tech Store</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1>Tech Store</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Produtos</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
+      <h1>Tech Store</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Produtos</a></li>
+          <li><a href="#">Serviços</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <section class="hero">
-            <p>Tecnologia para o seu dia a dia</p>
-            <h2>Equipamentos e acessorios de informática</h2>
-            <p>Notebooks, perifericos e componentes com qualidade e bons preços.</p>
-            <button>Ver produtos</button>
-        </section>
+      <section class="equipamentos-tecnologia">
+        <p>Tecnologia para o seu dia a dia</p>
+        <h2>Equipamentos e acessorios de informática</h2>
+        <p>Notebooks, perifericos e componentes com qualidade e bons preços.</p>
+        <button>Ver produtos</button>
+      </section>
 
-        <section id="servicos">
-            <h2 class="titulo-servicos">Serviços</h2>
+      <section class="produtos-destaque">
+        <div class="container">
+          <h2>Produtos em destaque</h2>
 
-            <table class="tabela-servicos">
-                <thead>
-                    <tr>
-                        <th>Serviço</th>
-                        <th>Descrição</th>
-                        <th>Valor</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Formatação</td>
-                        <td>Instalação e configuração do sistema.</td>
-                        <td>R$ 120,00</td>
-                    </tr>
-                    <tr>
-                        <td>Limpeza</td>
-                        <td>Manutenção preventiva.</td>
-                        <td>R$ 80,00</td>
-                    </tr>
-                    <tr>
-                        <td>Upgrade</td>
-                        <td>Instalação de memória e SSD.</td>
-                        <td>A partir de R$ 60,00</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+          <div class="produtos-grid">
+            <div class="produto-card">
+              <img src="img/notebook-gamer.jpeg" alt="Notebook Pro 15" />
 
-        <section id="contato">
-            <div class="contact-wrapper">
+              <div class="produto-info">
+                <h3>Notebook Pro 15</h3>
+                <p>Intel Core i5, 16 GB RAM e SSD de 512 GB.</p>
 
-                <!-- Left Column: Title & Subtitle -->
-                <div class="contact-header">
-                    <h1>Entre em contato</h1>
-                    <p>Envie uma mensagem para nossa equipe.</p>
-                </div>
+                <span class="preco">R$ 3.499,00</span>
 
-                <!-- Right Column: Form Card -->
-                <div class="contact-card">
-                    <form class="contact-form" action="#" method="POST" onsubmit="event.preventDefault();">
-
-                        <div class="form-group">
-                            <label for="nome">Nome</label>
-                            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="email">E-mail</label>
-                            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="mensagem">Mensagem</label>
-                            <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" required></textarea>
-                        </div>
-
-                        <button type="submit" class="submit-button">Enviar</button>
-                    </form>
-                </div>
-
+                <button>Comprar</button>
+              </div>
             </div>
-        </section>
+
+            <div class="produto-card">
+              <img src="/img/mouse-gamer.jpg" alt="Mouse Gamer" />
+
+              <div class="produto-info">
+                <h3>Mouse Gamer</h3>
+                <p>Sensor preciso, iluminação RGB e design ergonômico.</p>
+
+                <span class="preco">R$ 149,90</span>
+
+                <button>Comprar</button>
+              </div>
+            </div>
+
+            <div class="produto-card">
+              <img src="img/teclado-gamer.jpeg" alt="Teclado Mecânico" />
+
+              <div class="produto-info">
+                <h3>Teclado Mecânico</h3>
+                <p>Teclas mecânicas, iluminação LED e conexão USB.</p>
+
+                <span class="preco">R$ 279,90</span>
+
+                <button>Comprar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="servicos">
+        <h2 class="titulo-servicos">Serviços</h2>
+
+        <table class="tabela-servicos">
+          <thead>
+            <tr>
+              <th>Serviço</th>
+              <th>Descrição</th>
+              <th>Valor</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Formatação</td>
+              <td>Instalação e configuração do sistema.</td>
+              <td>R$ 120,00</td>
+            </tr>
+            <tr>
+              <td>Limpeza</td>
+              <td>Manutenção preventiva.</td>
+              <td>R$ 80,00</td>
+            </tr>
+            <tr>
+              <td>Upgrade</td>
+              <td>Instalação de memória e SSD.</td>
+              <td>A partir de R$ 60,00</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="contato">
+        <div class="contact-wrapper">
+          <div class="contact-header">
+            <h1>Entre em contato</h1>
+            <p>Envie uma mensagem para nossa equipe.</p>
+          </div>
+
+          <div class="contact-card">
+            <form
+              class="contact-form"
+              action="#"
+              method="POST"
+              onsubmit="event.preventDefault()"
+            >
+              <div class="form-group">
+                <label for="nome">Nome</label>
+                <input
+                  type="text"
+                  id="nome"
+                  name="nome"
+                  placeholder="Digite seu nome"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">E-mail</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Digite seu e-mail"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="mensagem">Mensagem</label>
+                <textarea
+                  id="mensagem"
+                  name="mensagem"
+                  placeholder="Digite sua mensagem"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="submit-button">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <p>Tech Store &copy; 2026</p>
+      <p>Tech Store &copy; 2026</p>
     </footer>
-
-</body>
-
+  </body>
 </html>
